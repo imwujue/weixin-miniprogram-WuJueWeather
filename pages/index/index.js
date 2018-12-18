@@ -64,7 +64,16 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-
+      return{
+        path:"/pages/index/index",
+        success:function(){
+          wx.showToast({
+            title: '分享成功',
+            icon:"success",
+            duration:2000
+          })
+        }
+      }
   },
 
   getLocation: function () {
@@ -130,8 +139,11 @@ Page({
         var hum = res.data.HeWeather6[0].now.hum;
         var fl = res.data.HeWeather6[0].now.fl;
         var daily_forecast = res.data.HeWeather6[0].daily_forecast;
+        var today = res.data;
+        console.log(today);
         console.log("tmp:" + tmp + " txt:" + txt + " code:" + code + " dir:" + dir + 
-        " hum:" + hum + " fl:" + fl + "daily_forecast" + daily_forecast);
+        " hum:" + hum + " fl:" + fl);
+        console.log(daily_forecast);
         that.setData({
           tmp: tmp,
           txt: txt,
