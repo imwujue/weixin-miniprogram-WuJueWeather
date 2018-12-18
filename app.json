@@ -2,7 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/today/index"
+    "pages/today/index",
+    "pages/hour/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -23,10 +24,16 @@
         "text": "近日天气概况"
       },
       {
+        "pagePath": "pages/hour/index",
+        "iconPath": "images/tabbar3.png",
+        "selectedIconPath": "images/tabbar3.png",
+        "text": "逐小时天气预报"
+      },
+      {
         "pagePath": "pages/today/index",
         "iconPath": "images/tabbar2.png",
         "selectedIconPath": "images/tabbar2.png",
-        "text": "今日天气详情"
+        "text": "今日生活指数"
       }
     ]
   }

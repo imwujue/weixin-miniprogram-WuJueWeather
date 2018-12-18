@@ -1,1 +1,95 @@
 /* pages/today/index.wxss */
+/* pages/weather/weather.wxss */
+.w{
+  color:white;
+}
+.b{
+  font-weight:bold;
+}
+
+.l{
+  border: 1rpx solid #fff;
+}
+
+.center{
+  text-align:center;
+  margin: auto 0;
+}
+
+.hor{
+  display: flex;
+}
+
+.bg{
+  width: 100%;
+  height:667px;
+}
+
+.container{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  padding:0;
+  margin: 0;
+  height: 100%;
+  display: block;
+}
+
+.indextitle{
+  font-size: 40px;
+  padding:60rpx;
+  color: white;
+}
+
+.comf{
+  font-size: 20px;
+  color: white;
+  padding-left: 60rpx;
+}
+
+.comf_txt{
+  font-size: 15px;
+  color: white;
+  padding:60rpx;
+  padding-top: 0px; 
+}
+
+.drsg{
+  font-size: 20px;
+  color: white;
+  padding-left: 60rpx;
+}
+
+.drsg_txt{
+  font-size: 15px;
+  color: white;
+  padding:60rpx;
+  padding-top: 0px; 
+}
+
+.uv{
+  font-size: 20px;
+  color: white;
+  padding-left: 60rpx;
+}
+
+.uv_txt{
+  font-size: 15px;
+  color: white;
+  padding:60rpx;
+  padding-top: 0px; 
+}
+
+.air{
+  font-size: 20px;
+  color: white;
+  padding-left: 60rpx;
+}
+
+.air_txt{
+  font-size: 15px;
+  color: white;
+  padding:60rpx;
+  padding-top: 0px; 
+}

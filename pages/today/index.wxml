@@ -1,2 +1,18 @@
 <!--pages/today/index.wxml-->
-<text>pages/today/index.wxml</text>
+<image src="../../images/bg.jpg" class="bg"></image>
+<view class="container">
+
+  <view class="lifeindex">
+    <view class="indextitle">生活指数</view>
+    <view class="comf">舒适度指数:{{comf}}</view>
+    <view class="comf_txt">{{comf_txt}}</view>
+    <view class="drsg">穿衣指数:{{drsg}}</view>
+    <view class="drsg_txt">{{drsg_txt}}</view>
+    <view class="uv">紫外线指数:{{uv}}</view>
+    <view class="uv_txt">{{uv_txt}}</view>
+    <view class="air">空气污染指数:{{air}}</view>
+    <view class="air_txt">{{air_txt}}</view>
+  </view>
+
+  
+</view>
