@@ -4,13 +4,19 @@
 
   <view class="nowWeather">
     <view class="temp w">{{tmp}}°C</view>
-    <view class="city w">{{city}}{{district}}{{street}}</view>
+    <view class="city w">
+      <text decode="{{true}}">{{city}}&nbsp;{{district}}&nbsp;{{street}}</text>
+    </view>
     <view class="weather w">{{txt}}</view>
   </view>
 
   <view class="pm25 w">
-    <view>空气质量:{{qlty}}</view>
-    <view>PM2.5指数:{{pm25}}</view>
+    <view>
+      <text decode="{{true}}">空气质量:&nbsp;{{qlty}}</text>
+    </view>
+    <view>
+      <text decode="{{true}}">PM2.5指数:&nbsp;{{pm25}}</text>
+    </view>
   </view>
 
   <view class="weatherDetail">
@@ -33,11 +39,19 @@
 
   <view wx:for="{{daily_forecast}}" wx:for-index="i" wx:for-item="item">
     <view class="hor forcast">
-      <view class="center">{{day[i]}}</view>
-      <view class="hor">
-        <view class="center">{{item.cond_txt_d}}</view>
+      <view class="week">
+        <view class="center">{{item.dayofweek}}</view>
       </view>
-      <view class="center">{{item.tmp_min}}°/{{item.tmp_max}}°</view>
+      <view class="hor">
+        <view class="center">
+          <text decode="{{true}}">{{item.cond_txt_d}}&nbsp;&nbsp;&nbsp;</text>
+        </view>
+      </view>
+      <view class="TempRange">
+        <view class="center">
+          <text decode="{{true}}">{{item.tmp_min}}°/{{item.tmp_max}}°</text>
+        </view>
+      </view>
     </view>
   </view>
 </view>

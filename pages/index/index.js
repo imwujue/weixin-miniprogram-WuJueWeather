@@ -1,6 +1,8 @@
 // pages/weather/weather.js
 var app = getApp()
+var util = require('../../utils/util.js');
 var day = ["今天", "明天", "后天"]
+
 Page({
   /**
    * 页面的初始数据
@@ -101,9 +103,13 @@ Page({
         var fl = res.data.HeWeather6[0].now.fl;
         var daily_forecast = res.data.HeWeather6[0].daily_forecast;
         var today = res.data;
+        let time = util.formatDate(new Date());
+        let date = util.getDates(7, time);
+        for(var i=0;i<7;i++){
+          daily_forecast[i].dayofweek = date[i].week;
+        };
+        console.log(date);
         console.log(today);
-        console.log("tmp:" + tmp + " txt:" + txt + " code:" + code + " dir:" + dir + 
-        " hum:" + hum + " fl:" + fl);
         console.log(daily_forecast);
         that.setData({
           tmp: tmp,
@@ -113,7 +119,7 @@ Page({
           sc: sc,
           hum: hum,
           fl: fl,
-          daily_forecast: daily_forecast
+          daily_forecast: daily_forecast,
         })
       },
       fail: function (res) { },

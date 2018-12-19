@@ -1,1 +1,59 @@
 /* pages/hour/index.wxss */
+.w{
+  color:white;
+}
+.b{
+  font-weight:bold;
+}
+
+.l{
+  border: 1rpx solid #fff;
+}
+
+.center{
+  text-align:center;
+  margin: auto 0;
+}
+
+.hor{
+  display: flex;
+}
+
+.bg{
+  width: 100%;
+  height:800px;
+}
+
+.temp{
+  font-size: 170rpx;
+}
+
+.container{
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 100%;
+  padding:0;
+  margin: 0;
+  height: 100%;
+  display: block;
+}
+
+.nowWeather{
+  padding-left: 60rpx;
+}
+.pm25{
+  padding-left: 60rpx;
+  padding-bottom: 120rpx
+}
+
+.forcast{
+  padding: 15px 0px 0px 0px;
+  border-bottom:1rpx solid rgb(241,229,229);
+  color:white;
+}
+
+.week{
+  margin-left:120rpx;
+  margin-right:200rpx;
+}
