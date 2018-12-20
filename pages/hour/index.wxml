@@ -4,31 +4,26 @@
 
   <view class="nowWeather">
     <view class="temp w">{{tmp}}°C</view>
-    <view class="city w">
-      <text decode="{{true}}">{{city}}&nbsp;{{district}}&nbsp;{{street}}</text>
-    </view>
-    <view class="weather w">{{txt}}</view>
   </view>
-
-  <view class="pm25 w">
-    <view>
-      <text decode="{{true}}">&nbsp;{{qlty}}</text>
-    </view>
-    <view>
-      <text decode="{{true}}">&nbsp;{{pm25}}</text>
-    </view>
+  <view class="chart"  style='width:100%;text-align:center;' >
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
   </view>
 
   <view wx:for="{{hour}}" wx:for-index="i" wx:for-item="item">
     <view class="hor forcast">
-      <view class="week">
+      <view class="time">
         <view class="center">{{item.time}}</view>
       </view>
-      <view class="hor">
+      <view class="tmp">
         <view class="center">
-          <text decode="{{true}}">{{item.tmp}}°&nbsp;&nbsp;&nbsp;{{item.cond_txt}}&nbsp;&nbsp;&nbsp;降水概率:{{item.pop}}%&nbsp;&nbsp;&nbsp;{{item.wind_dir}}:{{item.wind_spd}}级</text>
+        <text decode="{{true}}">{{item.tmp}}°&nbsp;|&nbsp;{{item.cond_txt}}&nbsp;|&nbsp;降水:{{item.pop}}%</text>
         </view>
+      </view>
+      <view> 
+        <view class="center"></view>
+        <view class="center"></view>
+        <view class="center">{{item.wind_dir}}:{{item.wind_spd}}级</view>
       </view>
     </view>
   </view>
-</view>
+  </view>

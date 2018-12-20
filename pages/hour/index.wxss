@@ -42,18 +42,27 @@
 .nowWeather{
   padding-left: 60rpx;
 }
-.pm25{
-  padding-left: 60rpx;
-  padding-bottom: 120rpx
-}
 
+.canvas{
+  width:600px;
+  height: 300px;
+  transform: scale(0.9);
+}
+.chart{
+  margin:0 auto;
+  display: flex;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  padding-bottom: 60rpx;
+}
 .forcast{
   padding: 15px 0px 0px 0px;
-  border-bottom:1rpx solid rgb(241,229,229);
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-bottom:0.5rpx solid rgb(241,229,229);
   color:white;
-}
-
-.week{
-  margin-left:120rpx;
-  margin-right:200rpx;
+  flex-direction: row;
+  justify-content:space-between;
+  font-size: 32rpx;
 }
