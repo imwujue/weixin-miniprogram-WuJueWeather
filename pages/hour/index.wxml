@@ -5,7 +5,7 @@
   <view class="nowWeather">
     <view class="temp w">{{tmp}}°C</view>
   </view>
-  <view class="chart"  style='width:100%;text-align:center;' >
+  <view class="chart" style='width:100%;text-align:center;'>
     <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
   </view>
 
@@ -16,14 +16,12 @@
       </view>
       <view class="tmp">
         <view class="center">
-        <text decode="{{true}}">{{item.tmp}}°&nbsp;|&nbsp;{{item.cond_txt}}&nbsp;|&nbsp;降水:{{item.pop}}%</text>
+          <text decode="{{true}}">{{item.tmp}}°&nbsp;|&nbsp;{{item.cond_txt}}&nbsp;|&nbsp;降水:{{item.pop}}%</text>
         </view>
       </view>
-      <view> 
-        <view class="center"></view>
-        <view class="center"></view>
+      <view>
         <view class="center">{{item.wind_dir}}:{{item.wind_spd}}级</view>
       </view>
     </view>
   </view>
-  </view>
+</view>

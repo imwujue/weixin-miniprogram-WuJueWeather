@@ -113,7 +113,7 @@ Page({
   getChart:function(hour){
     var windowWidth = '', windowHeight = '';    //定义宽高
     try {
-      var res = wx.getSystemInfoSync();    //试图获取屏幕宽高数据
+      var res = wx.getSystemInfoSync();    //获取屏幕宽高数据
       windowWidth = res.windowWidth;   //以设计图750为主进行比例算换
       windowHeight = res.windowWidth;   //以设计图750为主进行比例算换
     } catch (e) {
