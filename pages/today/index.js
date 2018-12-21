@@ -96,6 +96,10 @@ Page({
         var comf_txt = res.data.HeWeather6[0].lifestyle[0].txt;
         var drsg = res.data.HeWeather6[0].lifestyle[1].brf;
         var drsg_txt = res.data.HeWeather6[0].lifestyle[1].txt;
+        var flu = res.data.HeWeather6[0].lifestyle[2].brf;
+        var flu_txt = res.data.HeWeather6[0].lifestyle[2].txt;
+        var sport = res.data.HeWeather6[0].lifestyle[3].brf;
+        var sport_txt = res.data.HeWeather6[0].lifestyle[3].txt;
         var uv = res.data.HeWeather6[0].lifestyle[5].brf;
         var uv_txt = res.data.HeWeather6[0].lifestyle[5].txt;
         var cw = res.data.HeWeather6[0].lifestyle[6].brf;
@@ -113,7 +117,11 @@ Page({
           cw:cw,
           cw_txt:cw_txt,
           air:air,
-          air_txt:air_txt
+          air_txt:air_txt,
+          sport: sport,
+          sport_txt: sport_txt,
+          flu:flu,
+          flu_txt:flu_txt,
         })
       },
       fail: function (res) { },

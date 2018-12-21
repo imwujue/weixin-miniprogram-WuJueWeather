@@ -8,10 +8,14 @@
     <view class="comf_txt">{{comf_txt}}</view>
     <view class="drsg">穿衣指数:{{drsg}}</view>
     <view class="drsg_txt">{{drsg_txt}}</view>
+    <view class="cw">洗车指数:{{cw}}</view>
+    <view class="cw_txt">{{cw_txt}}</view>
     <view class="uv">紫外线指数:{{uv}}</view>
     <view class="uv_txt">{{uv_txt}}</view>
     <view class="air">空气污染指数:{{air}}</view>
     <view class="air_txt">{{air_txt}}</view>
+    <view class="sport">运动指数:{{sport}}</view>
+    <view class="sport_txt">{{sport_txt}}</view>
   </view>
 
   
